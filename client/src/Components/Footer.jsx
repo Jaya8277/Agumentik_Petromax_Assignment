@@ -29,7 +29,7 @@ const Footer = () => {
 
   const getData = () => {
     axios
-      .get("http://localhost:8080/content")
+      .get("https://petromax-assign-backend.vercel.app/content")
       .then((res) => {
         setData(res.data.data);
         console.log(res.data);
@@ -53,20 +53,32 @@ const Footer = () => {
           gap={3}
         >
           <Grid item>
-          <a href={data.facebook} ><FaFacebook  size={25} /></a>
-            
+            <a href={data.facebook}>
+              <FaFacebook size={25} />
+            </a>
           </Grid>
           <Grid item>
-          <a href={data.twitter}><BsTwitter size={25} /></a>
+            <a href={data.twitter}>
+              <BsTwitter size={25} />
+            </a>
           </Grid>
           <Grid item>
-          <a href={data.instagram} >  <BsInstagram size={25} /></a>
+            <a href={data.instagram}>
+              {" "}
+              <BsInstagram size={25} />
+            </a>
           </Grid>
           <Grid item>
-          <a href={data.google} >  <BsGoogle size={25} /></a> 
+            <a href={data.google}>
+              {" "}
+              <BsGoogle size={25} />
+            </a>
           </Grid>
           <Grid item>
-          <a href={data.linkedin} >  <BsLinkedin size={25} /></a> 
+            <a href={data.linkedin}>
+              {" "}
+              <BsLinkedin size={25} />
+            </a>
           </Grid>
         </Grid>
         <Typography>Holisticly unleash clients-centric experties.</Typography>
