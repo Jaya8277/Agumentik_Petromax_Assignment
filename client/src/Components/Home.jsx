@@ -1,9 +1,144 @@
-import React from 'react'
-
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import Navbar from "./Navbar";
+import "./style.css";
+import Footer from "./Footer";
+import { FaLaptop, FaMobileAlt } from "react-icons/fa";
+import { MdBusinessCenter } from "react-icons/md";
+import { RiComputerLine} from 'react-icons/ri';
+import {SiProtodotio, SiTestinglibrary} from 'react-icons/si';
+import imgg1 from './image3.PNG';
+// import imgg2 from './image2.PNG';
 const Home = () => {
-  return (
-    <div>Home Page</div>
-  )
-}
+  const [data, setData] = useState({});
 
-export default Home
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const getData = () => {
+    axios
+      .get("http://localhost:8080/content")
+      .then((res) => {
+        setData(res.data.data);
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+  return (
+    <div>
+      <Navbar />
+      <div className="container">
+        <div className="content">
+          <h1>{data.topleft}</h1>
+          <p>{data.topleft1}</p>
+          <button>Free Consultation</button>
+        </div>
+        <div className="content-img">
+          <img src={data.topright} alt="wrong" />
+        </div>
+      </div>
+
+      <div className="container1">
+        <div className="content-img1">
+          <img src={data.bottomleft} alt="wrong" />
+        </div>
+        <div className="content1">
+          <h1>{data.bottomRight}</h1>
+          <p>{data.bottomRight1}</p>
+          <button>Find Out More!</button>
+        </div>
+      </div>
+
+      {/* service */}
+
+      <div className="container2">
+        <h1>Our Services</h1>
+        <div className="card1"> 
+               <div className="cards">
+        <FaMobileAlt className="icon"/>
+        <h2>App Development</h2>
+        <p>
+       
+          This HTML file is a template. If you open it directly in the browser,
+          you will see an empty page. You can add webfonts,
+        </p>
+      </div>
+      <div className="cards">
+        <FaLaptop className="icon"/>
+        <h2>Web Development</h2>
+        <p>
+       
+          This HTML file is a template. If you open it directly in the browser,
+          you will see an empty page. You can add webfonts,
+        </p>
+      </div>
+      <div className="cards">
+        <MdBusinessCenter className="icon" />
+        <h2>Manage IT Services</h2>
+        <p>
+       
+          This HTML file is a template. If you open it directly in the browser,
+          you will see an empty page. You can add webfonts,
+        </p>
+      </div>
+      <div className="cards">
+        <RiComputerLine className="icon"/>
+        <h2>Business Analysis</h2>
+        <p>
+       
+          This HTML file is a template. If you open it directly in the browser,
+          you will see an empty page. You can add webfonts,
+        </p>
+      </div>
+      <div className="cards">
+        <SiProtodotio className="icon" />
+        <h2>Prototyping</h2>
+        <p>
+       
+          This HTML file is a template. If you open it directly in the browser,
+          you will see an empty page. You can add webfonts,
+        </p>
+      </div>
+      <div className="cards">
+        <SiTestinglibrary className="icon"/>
+        <h2>QA & Testing</h2>
+        <p>
+       
+          This HTML file is a template. If you open it directly in the browser,
+          you will see an empty page. You can add webfonts,
+        </p>
+      </div>
+     
+      </div>
+      <button>Find Out More!</button>
+      </div>
+
+
+      <div className="container3">
+        <div className="content-img3">
+          <img src={imgg1} alt="wrong" />
+        </div>
+        <div className="content3">
+          <h1>Drop Us A Line!</h1>
+          <div className="inputtag"> 
+         <input type="text" placeholder="Your Name"/>
+         <br/> <br/>
+         <input type="text" placeholder="Your Email"/>
+         <br/> <br/>
+         <textarea placeholder="Your Message">
+          
+         </textarea>
+         <br/> <br/>
+          <button>Send</button>
+        </div>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+};
+
+export default Home;
