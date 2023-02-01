@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Navbar from "./Navbar";
+import Navbar from "../Navbar/Navbar";
 import "./style.css";
-import Footer from "./Footer";
+import Footer from "../Footer/Footer";
 import { FaLaptop, FaMobileAlt } from "react-icons/fa";
 import { MdBusinessCenter } from "react-icons/md";
 import { RiComputerLine } from "react-icons/ri";
 import { SiProtodotio, SiTestinglibrary } from "react-icons/si";
-import imgg1 from "./image3.PNG";
+import imgg1 from "../image/image3.PNG";
 // import imgg2 from './image2.PNG';
 const Home = () => {
   const [data, setData] = useState({});

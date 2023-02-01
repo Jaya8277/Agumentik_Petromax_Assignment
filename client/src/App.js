@@ -3,7 +3,7 @@
 // import './App.css';
 
 import {Routes,Route} from "react-router-dom"
-import Home from './Components/Home';
+import Home from './Components/Home/Home.jsx';
 import Update from './Admin/Admin';
 
 function App() {
