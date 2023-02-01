@@ -1,9 +1,10 @@
 import React from 'react'
 import './Navbar.css';
+import {Link} from 'react-router-dom';
 const Navbar = () => {
   return (
     <div>
-        <div id="nav">
+        <div className='animate__animated animate__bounce' id="nav">
         <h1>PetroMax</h1>
             <ul>
                 <li>Home</li>
@@ -14,7 +15,8 @@ const Navbar = () => {
                 <li>Contact</li>
                 
             </ul>
-            <button>Free Consultation</button>
+            <button className='btn'>Free Consultation</button>
+            <Link to="/admin"><button>Admin Panel</button></Link>
         </div>
     </div>
   )

@@ -1,15 +1,21 @@
-// import logo from './logo.svg';
+
+
 // import './App.css';
 
-// import AdminPanel from "./Admin/AdminPanel";
-import Home from "./Components/Home";
+import {Routes,Route} from "react-router-dom"
+import Home from './Components/Home';
+import Update from './Admin/Admin';
 
 function App() {
   return (
     <div className="App">
-    <Home/>
-    {/* <AdminPanel/> */}
-    </div>    
+    
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/admin" element={<Update/>}/>
+    </Routes>
+  
+    </div>
   );
 }
 

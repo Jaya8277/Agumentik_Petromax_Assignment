@@ -41,7 +41,7 @@ const Footer = () => {
   // const classes = useStyle()
   return (
     <Grid className="footer" container spacing={1}>
-      <Grid item xs={4}>
+      <Grid className="animate__animated  animate__backInUp" item xs={4}>
         <Typography textAlign={"left"} lineHeight={"60px"} variant="h4">
           Get In Touch
         </Typography>
@@ -91,7 +91,7 @@ const Footer = () => {
           </ListItemButton>
         </List>
       </Grid>
-      <Grid item xs={3}>
+      <Grid className="animate__animated  animate__backInUp" item xs={3}>
         <Typography variant="h4" lineHeight={"60px"}>
           Services
         </Typography>
@@ -102,7 +102,7 @@ const Footer = () => {
           <ListItemText sx={{ mt: 1 }} primary="Contact" />
         </List>
       </Grid>
-      <Grid item xs={2}>
+      <Grid className="animate__animated  animate__backInUp" item xs={2}>
         <Typography variant="h4" lineHeight={"60px"}>
           About Us
         </Typography>
@@ -114,7 +114,7 @@ const Footer = () => {
           <ListItemText sx={{ mt: 1 }} primary="International Order" />
         </List>
       </Grid>
-      <Grid item xs={3}>
+      <Grid className="animate__animated  animate__backInUp" item xs={3}>
         <Typography variant="h4" lineHeight={"60px"}>
           Newsletter
         </Typography>

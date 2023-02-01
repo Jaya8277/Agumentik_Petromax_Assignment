@@ -219,3 +219,8 @@ font-size: 18px;
 margin-bottom: 8px;
     
 }
+/* 
+.content-img1 .animate__animated .animate__backInLeft {
+    --animate-duration: 10s;
+  --animate-delay: 1.9s;
+  } */

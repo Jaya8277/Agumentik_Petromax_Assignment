@@ -5,6 +5,6 @@ const connectionparams={
     useUnifiedTopology:true
 }
 
-const connection = mongoose.connect('mongodb://127.0.0.1:27017/admindata',connectionparams);
+const connection = mongoose.connect('mongodb+srv://petromax:petromax@cluster0.t2puiw0.mongodb.net/?retryWrites=true&w=majority',connectionparams);
 
 module.exports=connection;

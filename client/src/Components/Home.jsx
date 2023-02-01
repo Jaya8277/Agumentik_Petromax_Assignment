@@ -31,21 +31,21 @@ const Home = () => {
     <div>
       <Navbar />
       <div className="container">
-        <div className="content">
+        <div className="content animate__animated animate__backInLeft">
           <h1>{data.topleft}</h1>
           <p>{data.topleft1}</p>
           <button>Free Consultation</button>
         </div>
-        <div className="content-img">
+        <div className="content-img  animate__animated  animate__bounceInRight">
           <img src={data.topright} alt="wrong" />
         </div>
       </div>
 
       <div className="container1">
-        <div className="content-img1">
+        <div className="content-img1 animate__animated animate__backInLeft">
           <img src={data.bottomleft} alt="wrong" />
         </div>
-        <div className="content1">
+        <div className="content1  animate__animated  animate__bounceInRight">
           <h1>{data.bottomRight}</h1>
           <p>{data.bottomRight1}</p>
           <button>Find Out More!</button>
@@ -57,7 +57,7 @@ const Home = () => {
       <div className="container2">
         <h1>Our Services</h1>
         <div className="card1"> 
-               <div className="cards">
+               <div className="cards animate__animated  animate__backInUp ">
         <FaMobileAlt className="icon"/>
         <h2>App Development</h2>
         <p>
@@ -66,7 +66,7 @@ const Home = () => {
           you will see an empty page. You can add webfonts,
         </p>
       </div>
-      <div className="cards">
+      <div className="cards animate__animated  animate__backInUp">
         <FaLaptop className="icon"/>
         <h2>Web Development</h2>
         <p>
@@ -75,7 +75,7 @@ const Home = () => {
           you will see an empty page. You can add webfonts,
         </p>
       </div>
-      <div className="cards">
+      <div className="cards animate__animated  animate__backInUp">
         <MdBusinessCenter className="icon" />
         <h2>Manage IT Services</h2>
         <p>
@@ -84,7 +84,7 @@ const Home = () => {
           you will see an empty page. You can add webfonts,
         </p>
       </div>
-      <div className="cards">
+      <div className="cards animate__animated  animate__backInUp">
         <RiComputerLine className="icon"/>
         <h2>Business Analysis</h2>
         <p>
@@ -93,7 +93,7 @@ const Home = () => {
           you will see an empty page. You can add webfonts,
         </p>
       </div>
-      <div className="cards">
+      <div className="cards animate__animated  animate__backInUp">
         <SiProtodotio className="icon" />
         <h2>Prototyping</h2>
         <p>
@@ -102,7 +102,7 @@ const Home = () => {
           you will see an empty page. You can add webfonts,
         </p>
       </div>
-      <div className="cards">
+      <div className="cards animate__animated  animate__backInUp">
         <SiTestinglibrary className="icon"/>
         <h2>QA & Testing</h2>
         <p>
@@ -118,10 +118,10 @@ const Home = () => {
 
 
       <div className="container3">
-        <div className="content-img3">
+        <div className="content-img3 animate__animated animate__backInLeft">
           <img src={imgg1} alt="wrong" />
         </div>
-        <div className="content3">
+        <div className="content3 animate__animated  animate__bounceInRight">
           <h1>Drop Us A Line!</h1>
           <div className="inputtag"> 
          <input type="text" placeholder="Your Name"/>

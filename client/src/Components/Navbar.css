@@ -1,9 +1,10 @@
 #nav {
   display: flex;
+  margin-top: 10px;
 }
 #nav ul {
   display: flex;
-  margin-left: 25%;
+  margin-left: 15%;
 }
 #nav ul li {
   list-style-type: none;
@@ -21,7 +22,7 @@
 #nav button {
   margin-left: 35px;
   height: 40px;
-  margin-top: 25px;
+  margin-top: 20px;
   padding: 0px 20px 0px 20px;
   font-size: 16px;
   color: #ffffff;
@@ -31,4 +32,20 @@
   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
   font-weight: 700;
+  width: 10vw;
+}
+#nav .btn {
+  margin-left: 35px;
+  height: 40px;
+  margin-top: 20px;
+  padding: 0px 20px 0px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgb(28, 0, 87);
+  border-radius: 20px;
+  border: none;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 700;
+  width: 15vw;
 }
